@@ -36,12 +36,14 @@ Type help or a question mark "?" to see the list of all available commands you c
 Port Scanning: Following command is executed for scanning the systems on our local area network with a TCP scan (-sT) looking for open ports between 1 and 1000 (-p1-1000). msf > nmap -sT 192.168.1810/24 -p1-1000
 ## OUTPUT:
 ![ethep 5 4](https://github.com/hema-dharshini5/Metasploit-for-reconnaissance/assets/147117728/7026f5a5-e0c4-4334-b21b-ff787e6ed08c)
+
 use the db-nmap command to scan and save the results into Metasploit's postgresql attached database. In that way, you can use those results in the exploitation stage later.
 
 scan the targets with the command db_nmap as follows. msf > db_nmap 192.168.181.0/24
 
 ## OUTPUT:
 ![eth ep 5 5](https://github.com/hema-dharshini5/Metasploit-for-reconnaissance/assets/147117728/8fe995a9-5207-44c2-bf8c-791a747c73b1)
+
 Metasploit has a multitude of scanning modules built in. If we open another terminal, we can navigate to Metasploit's auxiliary modules and list all the scanner modules. cd /usr/share /metasploit-framework/modules/auxiliary kali > ls -l
 
 ## OUTPUT:
@@ -60,10 +62,12 @@ Before beginning, set up the Metasploit database by starting the PostgreSQL serv
 
 ## OUTPUT:
 ![ETH EP 5 10](https://github.com/hema-dharshini5/Metasploit-for-reconnaissance/assets/147117728/16704fbc-6c87-4a91-8b92-4329e5c55d26)
+
 Use the search option to look for an auxiliary module to scan and enumerate the MySQL database. search type:auxiliary mysql
 
 ## OUTPUT:
 ![ETH EP 5 11](https://github.com/hema-dharshini5/Metasploit-for-reconnaissance/assets/147117728/27acfcbd-1281-46ab-abf6-4e0ffba5df42)
+
 use 11 Or: use auxiliary/scanner/mysql/mysql_version
 ## OUTPUT:
 ![eth ep 5 12](https://github.com/hema-dharshini5/Metasploit-for-reconnaissance/assets/147117728/d1802e05-9a5b-498c-9d5a-8fe33b11a617)
@@ -71,9 +75,11 @@ use 11 Or: use auxiliary/scanner/mysql/mysql_version
 Use the set rhosts command to set the parameter and run the module, as follows:
 ## OUTPUT:
 ![eth ep 5 13](https://github.com/hema-dharshini5/Metasploit-for-reconnaissance/assets/147117728/5d2edb0c-daea-462f-bd8a-edb7b7513b95)
+
 After scanning, you can also brute force MySQL root account via Metasploit's auxiliary(scanner/mysql/mysql_login) module.
 ## OUTPUT:
 ![eth ep5 14](https://github.com/hema-dharshini5/Metasploit-for-reconnaissance/assets/147117728/a858af09-5ef4-46fb-b76f-f694e891145c)
+
 set the PASS_FILE parameter to the wordlist path available inside /usr/share/wordlists: set PASS_FILE /usr/share/wordlistss/rockyou.txt Then, specify the IP address of the target machine with the RHOSTS command. set RHOSTS Set BLANK_PASSWORDS to true in case there is no password set for the root account. set BLANK_PASSWORDS true
 ## OUTPUT:
 ![ETH EP 5 15](https://github.com/hema-dharshini5/Metasploit-for-reconnaissance/assets/147117728/0fcff5f1-309c-466f-ae47-6db1e70f8b59)
