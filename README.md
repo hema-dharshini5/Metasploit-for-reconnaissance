@@ -57,6 +57,7 @@ Search is a powerful command in Metasploit that you can use to find what you wan
 
 ## OUTPUT:
 ![ETHEP 5 7](https://github.com/hema-dharshini5/Metasploit-for-reconnaissance/assets/147117728/b1573cce-349d-47f1-a313-646c04c9e457)
+
 The info command provides information regarding a module or platform.
 ## OUTPUT:
 ![ETH EP 5 8](https://github.com/hema-dharshini5/Metasploit-for-reconnaissance/assets/147117728/5549ab1c-587e-4f96-ba74-4d50453277f7)
