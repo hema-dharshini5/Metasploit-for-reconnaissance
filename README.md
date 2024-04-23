@@ -66,6 +66,18 @@ Use the search option to look for an auxiliary module to scan and enumerate the 
 ![ETH EP 5 11](https://github.com/hema-dharshini5/Metasploit-for-reconnaissance/assets/147117728/27acfcbd-1281-46ab-abf6-4e0ffba5df42)
 use 11 Or: use auxiliary/scanner/mysql/mysql_version
 ## OUTPUT:
+![eth ep 5 12](https://github.com/hema-dharshini5/Metasploit-for-reconnaissance/assets/147117728/d1802e05-9a5b-498c-9d5a-8fe33b11a617)
+
+Use the set rhosts command to set the parameter and run the module, as follows:
+## OUTPUT:
+![eth ep 5 13](https://github.com/hema-dharshini5/Metasploit-for-reconnaissance/assets/147117728/5d2edb0c-daea-462f-bd8a-edb7b7513b95)
+After scanning, you can also brute force MySQL root account via Metasploit's auxiliary(scanner/mysql/mysql_login) module.
+## OUTPUT:
+![eth ep5 14](https://github.com/hema-dharshini5/Metasploit-for-reconnaissance/assets/147117728/a858af09-5ef4-46fb-b76f-f694e891145c)
+set the PASS_FILE parameter to the wordlist path available inside /usr/share/wordlists: set PASS_FILE /usr/share/wordlistss/rockyou.txt Then, specify the IP address of the target machine with the RHOSTS command. set RHOSTS Set BLANK_PASSWORDS to true in case there is no password set for the root account. set BLANK_PASSWORDS true
+## OUTPUT:
+![ETH EP 5 15](https://github.com/hema-dharshini5/Metasploit-for-reconnaissance/assets/147117728/0fcff5f1-309c-466f-ae47-6db1e70f8b59)
+
 
 ## RESULT:
 The Metasploit framework for reconnaissance is  examined successfully
