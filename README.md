@@ -27,10 +27,12 @@ Open terminal and try execute some kali linux commands
 
 ## OUTPUT:
 ![ethi 1](https://github.com/hema-dharshini5/Metasploit-for-reconnaissance/assets/147117728/35242a16-99ef-4ed7-bcca-c3d9160fdc07)
+
 Invoke msfconsole
 
 ## OUTPUT:
 ![eth2](https://github.com/hema-dharshini5/Metasploit-for-reconnaissance/assets/147117728/c3c21cc8-2a1e-49b6-a3c0-5901f9135fdd)
+
 Type help or a question mark "?" to see the list of all available commands you can use inside msfconsole.
 ## OUTPUT:
 ![ep 5 3 eth](https://github.com/hema-dharshini5/Metasploit-for-reconnaissance/assets/147117728/6217623e-7ee2-419b-989c-f21948cfc7cc)
